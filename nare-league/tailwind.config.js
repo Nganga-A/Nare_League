@@ -6,13 +6,13 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        bounce: {
-          '0%, 100%': { transform: 'translateY(-5%)' },
-          '50%': { transform: 'translateY(0)' },
+        scaleUpAndDown: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
         },
       },
       animation: {
-        bounce: 'bounce 0.5s',
+        scaleUpAndDown: 'scaleUpAndDown 0.5s',
       },
     },
   },
