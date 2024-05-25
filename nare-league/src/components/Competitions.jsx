@@ -35,7 +35,7 @@ const CompetitionsComponent = () => {
 
     return (
         <div className='container p-6'>
-        <h2 className='text-2xl font-bold text-center mb-4'>Competitions</h2>
+        <h2 className='text-2xl font-bold text-center mb-4'>Top Soccer Competitions</h2>
         <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
             {top_soccer && top_soccer.map((competition) => (
             <li className='bg-slate-100 shadow-md rounded-md overflow-hidden p-3 hover:animate-bounce' key={competition.competition_id}>
@@ -46,6 +46,7 @@ const CompetitionsComponent = () => {
                 onError={handleImageError}
                 />
                 <span className='block text-lg font-medium text-gray-800 '>{competition.competition_name}</span>
+                <span className="block text-md text-gray-700">Category: {competition.category}</span>
             </li>
             ))}
         </ul>
