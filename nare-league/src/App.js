@@ -7,12 +7,15 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <Router>
+      <div className='container'>
       <Routes>
           <Route path="/" element={[<Competitions/>, <AllSports />]} />  
           <Route path="/sports/:sport_name" element={<Categories />} />
           <Route path="/categories/:category_name" element={<Cat_Competitions/>} />
       </Routes>
+      </div>
     </Router>
+    
       );
 }
 
