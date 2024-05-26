@@ -55,11 +55,11 @@ const CategoryPage = () => {
 
 
 return (
-    <div>
-    <h2>Categories for {selectedSport?.sport_name || sport_name}</h2>
-    <ul>
+    <div className='container p-6'>
+    <h2 className="text-2xl font-bold text-center mb-4">Categories under {selectedSport?.sport_name || sport_name}</h2>
+    <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {categories.map((category) => (
-        <li key={category.category_id}>{category.category_name}</li>
+        <li className="bg-slate-100 shadow-md rounded-md overflow-hidden p-3 hover:animate-scaleUpAndDown" key={category.category_id}>{category.category_name}</li>
         ))}
     </ul>
     </div>
