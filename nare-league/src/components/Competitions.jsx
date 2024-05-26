@@ -38,7 +38,7 @@ const CompetitionsComponent = () => {
         <h2 className='text-2xl font-bold text-center mb-4'>Top Soccer Competitions</h2>
         <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
             {top_soccer && top_soccer.map((competition) => (
-            <li className='bg-slate-100 shadow-md rounded-md overflow-hidden p-3 hover:animate-scaleUpAndDown' key={competition.competition_id}>
+            <li className='bg-slate-100 dark:bg-slate-300 shadow-md rounded-md overflow-hidden p-3 hover:animate-scaleUpAndDown' key={competition.competition_id}>
                 <img
                 className='w-full h-48 object-cover'
                 src={competition.flag}
