@@ -45,8 +45,8 @@ const CompetitionsComponent = () => {
                 alt={competition.competition_name}
                 onError={handleImageError}
                 />
-                <span className='block text-lg font-medium text-gray-800 '>{competition.competition_name}</span>
-                <span className="block text-md text-gray-700">Category: {competition.category}</span>
+                <span className='block text-lg font-medium text-black '>{competition.competition_name}</span>
+                <span className="block text-md text-gray-600">Category: {competition.category}</span>
             </li>
             ))}
         </ul>

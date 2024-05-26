@@ -55,7 +55,9 @@ const CompetitionsPage = () => {
             <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {cat_competitions.map((competition) => (
                     <li className="bg-slate-100 shadow-md rounded-md overflow-hidden p-3 hover:animate-scaleUpAndDown" key={competition.competition_name}>
-                        {competition.competition_name}
+                        <span className='block text-lg font-medium text-black '>{competition.competition_name}</span>
+                        <span className="block text-md text-gray-600">Game Count: {competition.games_count}</span>
+                        <span className="block text-md text-gray-600">Betradar ID: {competition.betradar_competition_id}</span>
                     </li>
                 ))}
             </ul>
